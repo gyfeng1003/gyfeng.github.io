@@ -1,0 +1,14 @@
+/*
+* @Author: zhonghua
+* @Date:   2017-03-13 18:46:37
+* @Last Modified by:   zhonghua
+* @Last Modified time: 2017-03-13 18:47:01
+*/
+
+'use strict';
+module.exports = {
+    plugins: [
+       /* require('precss'),*/
+        require('autoprefixer')
+    ]
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%=htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<script src="bundle.js"></script>
+	<%=htmlWebpackPlugin.options.date %>
+
+	<%for (var key in htmlWebpackPlugin.files){%>
+	<%=key %>:<%=JSON.stringify(htmlWebpackPlugin.files[key])%>
+	<%}%>
+	============================
+	<%for (var key in htmlWebpackPlugin.options){%>
+	<%=key %>:<%=JSON.stringify(htmlWebpackPlugin.files[key])%>
+	<%}%>
+	<img src="src/assets/Hydrangeas.jpg">
+	<div id="app"></div>
+</body>
+</html>
